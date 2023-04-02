@@ -122,19 +122,33 @@ arr2.push(4)
 
 ### スプレッド演算子を使用する:
 
-`javascript const arr1 = [1, 2, 3]; const arr2 = [...arr1]`
+```
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
+
+```
 
 ### Array.from()を使用する:
 
-`javascript const arr1 = [1, 2, 3]; const arr2 = Array.from(arr1)`
+```
+const arr1 = [1, 2, 3];
+const arr2 = Array.from(arr1);
+```
 
 ### slice()メソッドを使用する:
 
-`const arr1 = [1, 2, 3]; const arr2 = arr1.slice()`
+```
+const arr1 = [1, 2, 3];
+const arr2 = arr1.slice();
+
+```
 
 ### JSON.parse()と JSON.stringify()を使用する:
 
-`const arr1 = [1, 2, 3]; const arr2 = JSON.parse(JSON.stringify(arr1))`
+```
+const arr1 = [1, 2, 3];
+const arr2 = JSON.parse(JSON.stringify(arr1));
+```
 
 ## 結論
 
