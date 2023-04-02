@@ -49,10 +49,15 @@ To prevent modifying the original array when updating a copy, we can create a ne
 
 ### Using the spread operator:
 
-```const arr1 = [1, 2, 3];
+```
+const arr1 = [1, 2, 3];
 const arr2 = [...arr1];
-Using Array.from()
 
+```
+
+### Using Array.from()
+
+```
 const arr1 = [1, 2, 3];
 const arr2 = Array.from(arr1);
 ```
@@ -91,7 +96,7 @@ arr2.push(4)
 
 ## 結果は何ですか？
 
-## ...
+### ...
 
 ## [1, 2, 3, 4], [1, 2, 3, 4] !
 
