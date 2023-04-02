@@ -23,7 +23,7 @@ arr2.push(4);
 
 ## What is the outcome?
 
-<img src = "https://media.giphy.com/media/a5viI92PAF89q/giphy.gif" width = "100%">
+## ...
 
 ## [1, 2, 3, 4], [1, 2, 3, 4] !
 
@@ -91,7 +91,7 @@ arr2.push(4)
 
 ## 結果は何ですか？
 
-<img src = "https://media.giphy.com/media/a5viI92PAF89q/giphy.gif" width = "100%">
+## ...
 
 ## [1, 2, 3, 4], [1, 2, 3, 4] !
 
