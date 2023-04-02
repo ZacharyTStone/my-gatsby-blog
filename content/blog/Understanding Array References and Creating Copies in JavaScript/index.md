@@ -1,5 +1,5 @@
 ---
-title: Understanding Array References and Creating Copies of Objects in JavaScript
+title: Understanding Object References and Creating Copies of Objects in JavaScript
 date: "2023-04-02"
 description: "A look at a coding question that explains how to make copies of objects in Javascript"
 tags: ["programming concepts", "javascript"]
