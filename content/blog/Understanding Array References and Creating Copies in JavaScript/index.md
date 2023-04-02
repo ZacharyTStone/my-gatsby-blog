@@ -5,7 +5,7 @@ description: "A look at a coding question that explains how to make copies of ob
 tags: ["programming concepts", "javascript"]
 ---
 
-## English / 日本語　
+#### English / 日本語　
 
 <hr>
 
@@ -23,7 +23,7 @@ arr2.push(4);
 
 ## What is the outcome?
 
-## ...
+### ...
 
 ## [1, 2, 3, 4], [1, 2, 3, 4] !
 
