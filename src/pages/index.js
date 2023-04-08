@@ -47,7 +47,7 @@ const BlogIndex = ({ data, location }) => {
               <div className="gallery">
                 <IconContext.Provider value={{ color: "var(--primary-color)" }}>
                   <BsFillGrid1X2Fill
-                    size={22}
+                    size={44}
                     style={{
                       alignSelf: "center",
                     }}
