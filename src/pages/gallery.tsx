@@ -58,7 +58,6 @@ const gallery: React.FC<PageProps> = ({ data }) => {
         {" "}
         <h1>Back Home </h1>
       </Link>
-      <Link to="/tags/">All Tags</Link>
     </Layout>
   )
 }
