@@ -65,6 +65,28 @@ const BlogIndex = ({ data, location }) => {
                 </span>
               </div>
             </Link>
+            <Link to="/all-posts">
+              <div className="gallery">
+                <IconContext.Provider value={{ color: "var(--primary-color)" }}>
+                  <BsFillGrid1X2Fill
+                    size={44}
+                    style={{
+                      alignSelf: "center",
+                    }}
+                  />
+                </IconContext.Provider>
+                <span
+                  style={{
+                    fontSize: "2rem",
+                    fontWeight: "bold",
+                    color: "black",
+                  }}
+                >
+                  {" "}
+                  All Posts
+                </span>
+              </div>
+            </Link>
             <Ads />
           </div>
           <main>
