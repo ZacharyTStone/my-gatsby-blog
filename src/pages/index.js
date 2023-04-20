@@ -66,7 +66,7 @@ const BlogIndex = ({ data, location }) => {
                 </span>
               </div>
             </Link>
-            <Link to="/tags/">
+            {/* <Link to="/tags/">
               <div className="gallery">
                 <IconContext.Provider value={{ color: "var(--primary-color)" }}>
                   <AiTwotoneTags
@@ -87,7 +87,7 @@ const BlogIndex = ({ data, location }) => {
                   All Tags
                 </span>
               </div>
-            </Link>
+            </Link> */}
             <Ads />
           </div>
           <main>
