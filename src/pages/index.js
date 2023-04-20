@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 import kebabCase from "lodash/kebabCase"
 import { IconContext } from "react-icons"
 import Ads from "../components/Ads"
+import { AiTwotoneTags } from "react-icons/ai"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -61,14 +62,14 @@ const BlogIndex = ({ data, location }) => {
                   }}
                 >
                   {" "}
-                  Image Gallery
+                  Gallery
                 </span>
               </div>
             </Link>
-            <Link to="/all-posts">
+            <Link to="/tags/">
               <div className="gallery">
                 <IconContext.Provider value={{ color: "var(--primary-color)" }}>
-                  <BsFillGrid1X2Fill
+                  <AiTwotoneTags
                     size={44}
                     style={{
                       alignSelf: "center",
@@ -83,7 +84,7 @@ const BlogIndex = ({ data, location }) => {
                   }}
                 >
                   {" "}
-                  All Posts
+                  All Tags
                 </span>
               </div>
             </Link>
@@ -159,7 +160,7 @@ const BlogIndex = ({ data, location }) => {
         <div>
           <h2 style={{ textAlign: "center" }}>
             <span itemProp="headline">
-              <Link to="/tags/">All tags</Link>
+              <Link to="/all-posts">All Posts</Link>
             </span>
           </h2>
         </div>
