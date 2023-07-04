@@ -92,9 +92,9 @@ When debugging your code, having separate variables for extracted conditions all
 
 ## Conclusion
 
-In the moment, it can be easy to just add another condition to an already long if statement in your codebase. For the sake of your future self and others, let's try to make our code more readible.
+In the moment, it can be easy to just add another condition to an already long if statement in your codebase.
 
-This is one of my favorite ways to do that.
+For the sake of your future self and others, let's try to make our code more readible.
 
 Did you find this blog post helpful?
 
