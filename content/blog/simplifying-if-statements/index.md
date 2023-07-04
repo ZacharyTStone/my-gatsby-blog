@@ -5,7 +5,9 @@ description: "Learn how to improve your logic"
 tags: ["programming concepts", "javascript"]
 ---
 
-Most of the time, we can make simple changes to increase the readability of our if statments
+## Most of the time, we can make simple changes to increase the readability of our if statments
+
+For example:
 
 ```javascript
 
@@ -22,7 +24,7 @@ if (id?.number > highestNumber) {
 
 ```
 
-However, sometimes we can run into if statements that feel like a puzzle to solve:
+## However, sometimes we can run into if statements that feel like a puzzle to solve:
 
 ```javascript
 
