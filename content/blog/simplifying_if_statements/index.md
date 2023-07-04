@@ -24,7 +24,7 @@ if (id?.number > highestNumber) {
 
 ```
 
-## However, sometimes we can run into if statements that feel like a puzzle to solve:
+## However, sometimes we can run into if statements that feel like a puzzle to read through:
 
 ```javascript
 
@@ -46,7 +46,7 @@ if (
 <img src ="https://media.giphy.com/media/cFgb5p5e1My3K/giphy.gif" width="100%" style="width:100%" />
 
 
-## Let's simplify that
+## Let's extract some of that logic out of of the if statement
 
 ```javascript
 
