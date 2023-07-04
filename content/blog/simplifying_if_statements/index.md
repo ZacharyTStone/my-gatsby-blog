@@ -5,9 +5,9 @@ description: "Learn how to improve your logic"
 tags: ["programming concepts", "javascript"]
 ---
 
-## Most of the time, we can make simple changes to increase the readability of our if statments
+## Most of the time, we can make simple changes to increase the readability of our if statements
 
-For example:
+### For example:
 
 ```javascript
 
@@ -24,17 +24,18 @@ if (id?.number > highestNumber) {
 
 ```
 
-## However, sometimes we can run into if statements that feel like a puzzle to read through:
+## However, sometimes we can run into if statements that feel take a little longer to read through:
 
 ```javascript
 
 if (
-  (user.id.type === "admin" || user.id.type === "manager") ||
+  (user?.id?.type === "admin" || user?.id?.type === "manager") ||
   (cartContext[cartId]?.pastOrders?.length > 0 &&
-    !!checkout.id &&
-    cartContext[cartId]?.currentOrder[checkout?.id]?.status?.isPaid === true &&
-    (currentOrderTotal >= 500 ||
-      (isBigSpender && orderValue >= 200) ||  
+    !!checkout?.id &&
+    cartContext[cartId].currentOrder[checkout?.id] &&
+    cartContext[cartId].currentOrder[checkout?.id].status?.isPaid === true &&
+    (cartContext[cartId].currentOrder[checkout?.id]?.orderTotal >= 500 ||
+      (user?.isBigSpender && orderValue >= 200) ||  
       ["USA", "Japan"].includes(user?.location)
     )
   )
@@ -61,8 +62,8 @@ const currentOrderIsValidAndPaid = !!checkout.id && cartContext[cartId]?.current
 const userIsFromHighSpendingArea = HIGH_SPENDING_AREAS.includes(user?.location);
 
 const isHighValueCustomer =
-  currentOrderTotal >= 500 ||
-  (isBigSpender && orderValue >= 200) ||
+  cartContext[cartId].currentOrder[checkout?.id]?.orderTotal >= 500 ||
+  (user?.isBigSpender && orderValue >= 200) ||
   (userIsFromHighSpendingArea)
   
 
