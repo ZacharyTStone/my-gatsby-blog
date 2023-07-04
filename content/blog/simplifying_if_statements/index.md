@@ -24,7 +24,7 @@ if (id?.number > highestNumber) {
 
 ```
 
-## However, sometimes we can run into if statements that feel take a little longer to read through:
+## However, sometimes we can run into if statements that are a bit tough to read through:
 
 ```javascript
 
@@ -53,16 +53,16 @@ if (
 
 const HIGH_SPENDING_AREAS = ["USA", "Japan"]
 
-const isAdminOrManager = user.id.type === "admin" || user.id.type === "manager";
+const isAdminOrManager = user?.id?.type === "admin" || user?.id?.type === "manager";
 
 const hasPastOrder = cartContext[cartId]?.pastOrders?.length > 0;
 
-const currentOrderIsValidAndPaid = !!checkout.id && cartContext[cartId]?.currentOrder[checkout?.id]?.status?.isPaid === true;
+const currentOrderIsValidAndPaid = !!checkout?.id && cartContext[cartId]?.currentOrder[checkout?.id]?.status?.isPaid === true;
 
 const userIsFromHighSpendingArea = HIGH_SPENDING_AREAS.includes(user?.location);
 
 const isHighValueCustomer =
-  cartContext[cartId].currentOrder[checkout?.id]?.orderTotal >= 500 ||
+  cartContext[cartId]?.currentOrder[checkout?.id]?.orderTotal >= 500 ||
   (user?.isBigSpender && orderValue >= 200) ||
   (userIsFromHighSpendingArea)
   
