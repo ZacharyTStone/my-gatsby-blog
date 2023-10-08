@@ -6,9 +6,9 @@ const Layout = ({
   title,
   children,
 }: {
-  location: Location
-  title: string
-  children: React.ReactNode
+  location?: Location
+  title?: string
+  children?: React.ReactNode
 }) => {
   //@ts-ignore
   const rootPath = `${__PATH_PREFIX__}/`

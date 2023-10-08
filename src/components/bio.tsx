@@ -45,8 +45,8 @@ const Bio = () => {
             <p>
               Written by <strong>{author.name}</strong>{" "}
               {author?.summary || null}
-              <a href="https://linktr.ee/zachinjapan">
-                My Social Links <FaLink />
+              <a href="https://zstone.dev">
+                Main Site <FaLink />
               </a>{" "}
             </p>
           </>

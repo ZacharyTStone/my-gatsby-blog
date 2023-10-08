@@ -1,6 +1,8 @@
-import React from "react"
+import * as React from "react"
 
+// @ts-expect-error
 import ad1 from "../images/ad1.jpg"
+// @ts-expect-error
 import ad2 from "../images/ad2.png"
 
 const Ads = () => {

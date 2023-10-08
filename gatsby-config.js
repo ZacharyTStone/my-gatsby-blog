@@ -3,9 +3,9 @@ module.exports = {
     title: `Zach in Japan`,
     author: {
       name: `Zach Stone`,
-      summary: `Learn about his journey from English teacher to web developer.`,
+      summary: `Learn about his journey from English teacher to software engineer.`,
     },
-    description: `A blog detailing Zach Stone's journey from English teacher to web developer. `,
+    description: `A blog detailing Zach Stone's journey from English teacher to software engineer. `,
     siteUrl: `https://zachinjapan.com`,
   },
   plugins: [
@@ -48,12 +48,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -122,8 +116,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

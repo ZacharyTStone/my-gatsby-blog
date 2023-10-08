@@ -5,7 +5,8 @@ import { BsFillGrid1X2Fill } from "react-icons/bs"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import kebabCase from "lodash/kebabCase"
+import * as _ from "lodash"
+const kebabCase = _.kebabCase
 import { IconContext } from "react-icons"
 import Ads from "../components/Ads"
 import { AiTwotoneTags } from "react-icons/ai"
@@ -47,12 +48,7 @@ const BlogIndex = ({ data, location }) => {
             <Link to="/gallery">
               <div className="gallery">
                 <IconContext.Provider value={{ color: "var(--primary-color)" }}>
-                  <BsFillGrid1X2Fill
-                    size={44}
-                    style={{
-                      alignSelf: "center",
-                    }}
-                  />
+                  <BsFillGrid1X2Fill size={44} />
                 </IconContext.Provider>
                 <span
                   style={{
@@ -66,28 +62,6 @@ const BlogIndex = ({ data, location }) => {
                 </span>
               </div>
             </Link>
-            {/* <Link to="/tags/">
-              <div className="gallery">
-                <IconContext.Provider value={{ color: "var(--primary-color)" }}>
-                  <AiTwotoneTags
-                    size={44}
-                    style={{
-                      alignSelf: "center",
-                    }}
-                  />
-                </IconContext.Provider>
-                <span
-                  style={{
-                    fontSize: "2rem",
-                    fontWeight: "bold",
-                    color: "black",
-                  }}
-                >
-                  {" "}
-                  All Tags
-                </span>
-              </div>
-            </Link> */}
             <Ads />
           </div>
           <main>
