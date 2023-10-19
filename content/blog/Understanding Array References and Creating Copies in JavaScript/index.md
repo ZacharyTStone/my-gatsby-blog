@@ -2,7 +2,7 @@
 title: Understanding Object References and Creating Copies of Objects in JavaScript
 date: "2023-04-02"
 description: "A look at a coding question that explains how to make copies of objects in Javascript"
-tags: ["programming concepts", "javascript"]
+tags: ["programming concepts", "javascript" "日本語"]
 ---
 
 #### English / 日本語　
@@ -79,19 +79,11 @@ const arr2 = JSON.parse(JSON.stringify(arr1));
 
 ## Conclusion
 
-In conclusion, understanding how JavaScript handles object references and creating copies of objects is crucial to avoid unintended side effects in your code. When assigning one array to another, it's important to be aware that JavaScript assigns references instead of creating a new array with the same values.
+When assigning one array to another, it's important to be aware that JavaScript assigns references instead of creating a new array with the same values.
 
 To make a copy of an array without referencing the original, several methods can be used, including the spread operator, Array.from(), the slice() method, and JSON.parse() with JSON.stringify() and more.
 
-However, it's important to note that each of these methods has its limitations and potential pitfalls. These include:
-
-Shallow Copy: The methods mentioned above create a shallow copy of the array, meaning that if the array contains nested objects or arrays, those nested objects will still be referenced and not deeply copied. Modifying the nested objects in the copied array will affect the original array as well.
-
-Performance: Some copy methods, such as JSON.parse() and JSON.stringify(), involve serialization and deserialization, which can be computationally expensive for large or complex objects. These methods are not recommended for performance-critical scenarios.
-
-Non-Array Objects: The discussed methods are specifically for copying arrays. If you're dealing with non-array objects, such as plain JavaScript objects, different approaches like Object.assign() or libraries like Lodash's cloneDeep() may be more appropriate.
-
-It's important to thoroughly understand the limitations and potential issues associated with each method before choosing the one that best suits your specific requirements.
+However, it's important to note that each of these methods has its limitations and potential pitfalls. Maybe we can talk about that in another post.
 
 <hr>
 
@@ -168,12 +160,4 @@ const arr2 = JSON.parse(JSON.stringify(arr1));
 
 元の配列を参照せずに配列のコピーを作成するためには、スプレッド演算子、Array.from()、slice()メソッド、および JSON.parse()と JSON.stringify()など、いくつかの方法があります。
 
-ただし、これらの方法にはそれぞれ制限と潜在的な注意点があることに注意する必要があります。以下にそれらを示します:
-
-浅いコピー: 上記の方法は配列の浅いコピーを作成します。つまり、配列にネストされたオブジェクトや配列が含まれている場合、そのネストされたオブジェクトは参照され、深くコピーされません。コピーされた配列のネストされたオブジェクトを変更すると、元の配列にも影響が及びます。
-
-パフォーマンス: JSON.parse()や JSON.stringify()などの一部のコピー方法は、シリアライズとデシリアライズを伴うため、大きなまたは複雑なオブジェクトでは計算量が多くなる場合があります。これらの方法は、パフォーマンスが重要なシナリオでは推奨されません。
-
-配列以外のオブジェクト: 上記の方法は特に配列のコピーに対して使用されるものです。プレーンな JavaScript オブジェクトなど、配列以外のオブジェクトを扱う場合は、Object.assign()のような別のアプローチや Lodash の cloneDeep()などのライブラリがより適している場合があります。
-
-それぞれの方法に関連する制限と潜在的な問題を徹底的に理解し、特定の要件に最も適した方法を選ぶ前に注意深く検討することが重要です。
+ただし、これらの方法にはそれぞれ制限と潜在的な注意点があることに注意する必要があります。また、他のポストで書こうと思っています。
