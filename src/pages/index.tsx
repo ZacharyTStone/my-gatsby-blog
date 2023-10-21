@@ -140,7 +140,7 @@ const GalleryText = styled.span`
 `
 
 const StyledButton = styled.button`
-  background-color: #f5f5f5;
+  background-color: transparent;
   border: none;
   color: #000;
   padding: 5px 10px;
