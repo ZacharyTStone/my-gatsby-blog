@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 
 // Components
 import { Helmet } from "react-helmet"
@@ -15,18 +16,7 @@ const AllPostsPage = ({
 }) => (
   <div>
     <Helmet title={title} />
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        margin: "0 auto",
-        padding: "20px",
-        height: "100vh",
-        width: "100vw",
-      }}
-    >
+    <FullViewportDiv>
       <h1>All Posts</h1>
       <ul>
         {edges.map(({ node }) => (
@@ -38,7 +28,7 @@ const AllPostsPage = ({
         ))}
       </ul>
       <Link to={`/`}>Back Home</Link>
-    </div>
+    </FullViewportDiv>
   </div>
 )
 
@@ -67,6 +57,17 @@ AllPostsPage.propTypes = {
     }),
   }),
 }
+
+const FullViewportDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+`
 
 export default AllPostsPage
 

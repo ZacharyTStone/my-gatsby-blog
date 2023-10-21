@@ -339,6 +339,13 @@ a:focus {
 .tag-list {
   padding-left: 20px;
 }
+.minimal-footer {
+  text-align: center;
+  padding: var(--spacing-4);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  background-color: var(--color-background); /* Match your background color */
+}
 
 /* Media queries */
 
