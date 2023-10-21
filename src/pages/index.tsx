@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { BsFillGrid1X2Fill } from "react-icons/bs"
 import styled from "styled-components"
