@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 
 // Components
 import { Link, graphql } from "gatsby"
@@ -12,18 +13,7 @@ const Tags = ({ pageContext, data }) => {
   } tagged with "${tag}"`
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        margin: "0 auto",
-        padding: "20px",
-        height: "100vh",
-        width: "100vw",
-      }}
-    >
+    <PageDiv>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -37,7 +27,7 @@ const Tags = ({ pageContext, data }) => {
         })}
       </ul>
       <Link to="/tags">All tags</Link>
-    </div>
+    </PageDiv>
   )
 }
 
@@ -63,6 +53,17 @@ Tags.propTypes = {
     }),
   }),
 }
+
+const PageDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+`
 
 export default Tags
 
