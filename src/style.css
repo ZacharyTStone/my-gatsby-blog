@@ -375,3 +375,45 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+// styles.css
+.tag-list {
+  list-style: none;
+}
+
+.tag-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-icon {
+  color: var(--primary-color);
+  margin-right: 8px;
+}
+
+.gallery-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.styled-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}

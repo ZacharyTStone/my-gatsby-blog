@@ -31,21 +31,24 @@ const BlogIndex = ({ data, location }) => {
       <div className="layout">
         <div className="tags">
           <h1 className="main-heading">Tags</h1>
-          <TagList className="tag-list">
+          <ul className="tag-list">
             {data.allMarkdownRemark.group.map(tag => (
               <li key={tag.fieldValue}>
-                <TagLink to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                <Link
+                  className="tag-link"
+                  to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                >
                   {tag.fieldValue} ({tag.totalCount})
-                </TagLink>
+                </Link>
               </li>
             ))}
-          </TagList>
-          <GalleryLink to="/gallery">
+          </ul>
+          <Link className="gallery-link" to="/gallery">
             <IconContext.Provider value={{ color: "var(--primary-color)" }}>
-              <GalleryIcon size={44} />
+              <BsFillGrid1X2Fill size={44} className="gallery-icon" />
             </IconContext.Provider>
-            <GalleryText>Gallery</GalleryText>
-          </GalleryLink>
+            <span className="gallery-text">Gallery</span>
+          </Link>
           <Ads />
         </div>
         <main>
@@ -81,7 +84,7 @@ const BlogIndex = ({ data, location }) => {
                       &#123;
                       {post.frontmatter.tags.map(tag => (
                         <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>
-                          <StyledButton>{tag}</StyledButton>
+                          <button className="styled-button">{tag}</button>
                         </Link>
                       ))}
                       &#125;
@@ -110,48 +113,6 @@ const BlogIndex = ({ data, location }) => {
     </Layout>
   )
 }
-
-// Styled components
-const TagList = styled.ul`
-  list-style: none;
-`
-
-const TagLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`
-
-const GalleryLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-`
-
-const GalleryIcon = styled(BsFillGrid1X2Fill)`
-  color: var(--primary-color);
-  margin-right: 8px;
-`
-
-const GalleryText = styled.span`
-  font-size: 2rem;
-  font-weight: bold;
-  color: black;
-`
-
-const StyledButton = styled.button`
-  background-color: transparent;
-  border: none;
-  color: #000;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-`
 
 export default BlogIndex
 
