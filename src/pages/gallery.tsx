@@ -55,7 +55,6 @@ const gallery: React.FC<PageProps> = ({ data }) => {
         onClose={onClose}
       />
       <Link to="/">
-        {" "}
         <h1>Back Home </h1>
       </Link>
     </Layout>

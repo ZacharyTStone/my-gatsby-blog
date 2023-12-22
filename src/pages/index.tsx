@@ -1,14 +1,13 @@
-import * as React from "react"
 import { Link, graphql } from "gatsby"
+import * as React from "react"
 import { BsFillGrid1X2Fill } from "react-icons/bs"
-import styled from "styled-components"
 
+import { kebabCase } from "lodash"
+import { IconContext } from "react-icons"
+import Ads from "../components/Ads"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Ads from "../components/Ads"
-import { kebabCase } from "lodash"
-import { IconContext } from "react-icons"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`

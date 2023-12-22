@@ -166,14 +166,6 @@ const MusicAndFlag = () => {
   );
 };
 
-const Wrapper = styled.div`
-  .flag {
-    width: 3rem;
-    height: 2rem;
-    cursor: pointer;
-    margin-top: 0.5rem;
-  }
-`;
 
 export default MusicAndFlag;
 ```
