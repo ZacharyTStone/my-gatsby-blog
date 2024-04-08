@@ -8,6 +8,6 @@ Recent additions:
 
 -Non tech blog posts
 
-#live site
+# live site
 
 https://zachinjapan.com/
