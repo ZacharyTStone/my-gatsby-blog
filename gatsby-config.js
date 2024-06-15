@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Zach in Japan`,
+    title: `Zach Stone`,
     author: {
       name: `Zach Stone`,
       summary: `Learn about his journey from English teacher to software engineer.`,
     },
     description: `A blog detailing Zach Stone's journey from English teacher to software engineer. `,
-    siteUrl: `https://zachinjapan.com`,
+    siteUrl: `https://zach-stone.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-image`,

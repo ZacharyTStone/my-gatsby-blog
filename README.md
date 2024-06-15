@@ -10,4 +10,4 @@ Recent additions:
 
 # live site
 
-https://zachinjapan.com/
+https://zach-stone.netlify.app/
