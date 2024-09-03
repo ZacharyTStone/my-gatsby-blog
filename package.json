@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^7.0.3",
-    "gatsby": "^4.25.7",
+    "gatsby": "^5.13.7",
     "gatsby-plugin-feed": "^4.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
